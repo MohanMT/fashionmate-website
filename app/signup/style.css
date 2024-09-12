@@ -1,0 +1,149 @@
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .Login .container {
+    padding: 1.5rem;
+    display: flex;
+    background-color: #f3f4f6; /* bg-gray-100 */
+    align-items: center;
+    justify-content: center;
+    border-width: 8px;
+    border-color: #e5e7eb; /* border-gray-200 */
+    flex-shrink: 0;
+    width: 100%;
+    border-radius: 1.5rem; /* rounded-3xl */
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .Login .container {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .Login .container {
+      width: 94%;
+    }
+  }
+  
+  .Login .container .left__content {
+    width: 0;
+  }
+  
+  @media (min-width: 1024px) {
+    .Login .container .left__content {
+      width: 50%;
+    }
+  }
+  
+  .Login .container .left__content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* object-fill equivalent */
+  }
+  
+  .Login .container .right__content {
+    width: 100%;
+  }
+  
+  @media (min-width: 1024px) {
+    .Login .container .right__content {
+      width: 50%;
+    }
+  }
+  
+  .Login .container .right__content .title h1 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    letter-spacing: -0.015em; /* tracking-tight */
+    color: #000000;
+  }
+  
+  @media (min-width: 640px) {
+    .Login .container .right__content .title h1 {
+      font-size: 1.575rem; /* sm:text-3xl */
+    }
+  }
+  
+  .Login .container .right__content .title .welcome__message {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #9ca3af; /* text-gray-400 */
+  }
+  
+  @media (min-width: 640px) {
+    .Login .container .right__content .title .welcome__message {
+      font-size: 1rem; /* sm:text-base */
+    }
+  }
+  
+  .Login .container .right__content .login__form {
+    margin-top: 1.5rem; /* pt-6 */
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* space-y-5 */
+  }
+  
+  @media (min-width: 640px) {
+    .Login .container .right__content .login__form {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  }
+  
+  /* Full width for the image */
+.full-width-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Flex layout for the container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Right content takes up equal space */
+.right__content {
+  flex: 1;
+  padding-right: 25px;
+}
+
+/* Left content full width */
+.left__content {
+  flex: 1;
+}
+
+/* Space between Remember Me and Forgot Password */
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Adjusting styles for 'Forgot Password' */
+.forgot-password {
+  margin-left: auto; /* Align to the right */
+  color: #ff7a00; /* Same color as button */
+}
+
+/* Customizing checkbox */
+#custom-checkbox:checked {
+  background-color: #ff7a00; /* Same as button */
+}
+
+/* Adding styles for the login button color */
+button {
+  background-color: #ff7a00;
+  color: white;
+}

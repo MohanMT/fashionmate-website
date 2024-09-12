@@ -1,0 +1,30 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 5s linear infinite; /* Adjust duration for speed */
+}
+
+.slide {
+  min-width: 300px; /* Adjust based on your slide image size */
+  margin-right: 10px;
+}
+
+.carousel-image {
+  width: 200px;
+  height: 100px;
+}
+
+/* Infinite scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

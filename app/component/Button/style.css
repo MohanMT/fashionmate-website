@@ -1,0 +1,25 @@
+.Button {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  border-radius: 0.375rem; /* equivalent to rounded-md */
+  background-color:#F3B960; /* bg-primary */
+  padding: 0.625rem 0.75rem; /* px-3 py-2.5 */
+  font-size: 1rem; /* text-base */
+  font-weight: 600; /* font-semibold */
+  line-height: 1.5rem; /* leading-6 */
+  color: white; /* text-white */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  transition: background-color 0.3s ease;
+
+  /* Hover state */
+  &:hover {
+    background-color:#F3B960; /* hover:bg-primary */
+  }
+
+  /* Focus state */
+  &:focus-visible {
+    outline: 2px solid var(--color-ternary); /* focus-visible:outline-primary */
+    outline-offset: 2px; /* focus-visible:outline-offset-2 */
+  }
+}
